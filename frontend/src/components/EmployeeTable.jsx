@@ -5,7 +5,7 @@ export default function EmployeeTable({ setRefresh }) {
   const [employees, setEmployees] = useState([]);
 
   const fetchEmployees = async () => {
-    const res = await axios.get("http://localhost:5000/api/employees");
+    const res = await axios.get("https://hrms-lite-n52f.onrender.com/api/employees");
     setEmployees(res.data);
   };
 
@@ -17,7 +17,7 @@ export default function EmployeeTable({ setRefresh }) {
   }, []);
 
   const deleteEmployee = async (id) => {
-    await axios.delete(`http://localhost:5000/api/employees/${id}`);
+    await axios.delete(`https://hrms-lite-n52f.onrender.com/api/employees/${id}`);
     fetchEmployees(); // immediate update after delete
   };
 

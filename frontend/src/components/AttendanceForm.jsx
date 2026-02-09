@@ -10,7 +10,7 @@ export default function AttendanceForm({ refreshAttendance }) {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/attendance", {
+      await axios.post("https://hrms-lite-n52f.onrender.com/api/attendance", {
         employeeId,
         date,
         status,

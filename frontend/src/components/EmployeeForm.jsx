@@ -13,7 +13,7 @@ export default function EmployeeForm({ refreshEmployees }) {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/employees", form);
+      await axios.post("https://hrms-lite-n52f.onrender.com/api/employees", form);
 
       alert("Employee added");
 
