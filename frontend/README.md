@@ -1,16 +1,108 @@
-# React + Vite
+# Employee Attendance Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack employee attendance management system built using the MERN stack.
 
-Currently, two official plugins are available:
+This project allows users to:
+- Add employees
+- Mark attendance
+- View attendance records
+- Filter attendance by date
+- View total present days per employee
+- See dashboard summary statistics
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend:
+- React
+- Tailwind CSS
+- Axios
 
-## Expanding the ESLint configuration
+Backend:
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+### Core Features
+- Employee management
+- Attendance tracking
+- REST API integration
+- Dynamic table updates without refresh
+
+### Bonus Features Implemented
+- Filter attendance records by date
+- Total present days per employee
+- Dashboard summary cards
+
+---
+
+## Project Structure
+
+frontend/
+components/
+pages/
+
+backend/
+models/
+routes/
+server.js
+
+
+---
+
+## Installation
+
+### 1. Clone repository
+
+git clone https://github.com/YOUR_USERNAME/attendance-manager.git
+cd attendance-manager
+
+
+### 2. Install backend dependencies
+
+cd backend
+npm install
+
+
+### 3. Install frontend dependencies
+
+cd ../frontend
+npm install
+
+
+---
+
+## Running the Project
+
+### Start backend
+cd backend
+npm start
+
+
+### Start frontend
+cd frontend
+npm start
+
+
+---
+
+## API Endpoints
+
+### Employee
+- `GET /api/employees`
+- `POST /api/employees`
+
+### Attendance
+- `GET /api/attendance`
+- `POST /api/attendance`
+
+---
+
+## Author
+Unnati
