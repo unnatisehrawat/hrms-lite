@@ -14,7 +14,7 @@ app.use(express.json());
 app.use("/api/employees", employeeRoutes);
 app.use("/api/attendance", attendanceRoutes);
 
-
+const PORT = process.env.PORT || 5000
 
     mongoose.connect(process.env.MONGO_URI)
   .then(() => {
